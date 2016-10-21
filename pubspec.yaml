@@ -1,5 +1,8 @@
-name: BBT
-description: CLI app
+authors: Fernando Quinonez and Antonio J. Hernandez-Goez
+homepage: https://github.com/quinonez/BBT-Dart
+name: bbt
+version: 1.0.0
+description: Building Blocks and Tools (BBT) CLI Library. For Scientists, Engineers, Educators and Students.
 dependencies: 
   args: any
   dart_style: any

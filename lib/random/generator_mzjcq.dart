@@ -52,7 +52,7 @@ import 'dart:math';
 import 'dart:io';
 
 //class GENERATOR_MZJCQ extends GENERATOR(){
-class GENERATOR_MZJCQ { 
+class generator_mzjcq { 
   List<double> _u = new List();
   double _c, _cd, _cm;
   int _i97, _j97;
@@ -60,7 +60,7 @@ class GENERATOR_MZJCQ {
   int gSeed;
   int gSeeds;
 
-  GENERATOR_MZJCQ( int seed ){
+  generator_mzjcq( int seed ){
     gSeed = seed;
     //gSeeds = seeds;
     SetSeed( gSeed );

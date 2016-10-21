@@ -1,8 +1,8 @@
-import 'package:BBT/Random/GENERATOR_MZJCQ.dart';
+import 'package:bbt/random/generator_mzjcq.dart';
 
 void main(){
   print('Hello World');
-  var gen = new GENERATOR_MZJCQ( 234 );
+  var gen = new generator_mzjcq( 234 );
   int n = 50;
   List<double> v = new List();
   gen.FlatArray( n, v );
