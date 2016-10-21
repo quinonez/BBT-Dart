@@ -1,5 +1,5 @@
 # BBT-Dart
 ## USAGE
 ```bash
-./RUNME
+./RUNME.sh
 ```
