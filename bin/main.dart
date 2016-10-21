@@ -1,4 +1,4 @@
-import 'package:BBT/random/GENERATOR_MZJCQ.dart';
+import 'package:BBT/Random/GENERATOR_MZJCQ.dart';
 
 void main(){
   print('Hello World');
