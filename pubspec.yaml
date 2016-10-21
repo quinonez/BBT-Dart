@@ -1,4 +1,6 @@
-authors: Fernando Quinonez and Antonio J. Hernandez-Goez
+authors: 
+  - Fernando Quinonez <fernando.andres.quinonez.granados@gmail.com> 
+  - Antonio Goez <antoniogoez@gmail.com>
 homepage: https://github.com/quinonez/BBT-Dart
 name: bbt
 version: 1.0.0
