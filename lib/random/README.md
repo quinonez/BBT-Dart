@@ -4,7 +4,7 @@
 Pseudo-random numbers generator Marzaglia-Zaman-James-Cosmo-Quinonez
 Known in the High Energy Physics community as the HepJamesRandom generator.
 
-# Libreria: random
+# Librería: random
 ## Clases:
 ### generator_mzjcq
 Generador de números pseudo-aleatorios Marzaglia-Zaman-James-Cosmo-Quiñonez.
