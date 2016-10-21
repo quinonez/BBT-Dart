@@ -1,7 +1,7 @@
 import "dart:io";
 
 
-class Print{
+class print{
 
 
 }
