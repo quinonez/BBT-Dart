@@ -60,7 +60,7 @@ class hepjamesrandom {
   int gSeed;
   int gSeeds;
 
-  generator_mzjcq( int seed ){
+  hepjamesrandom( int seed ){
     gSeed = seed;
     //gSeeds = seeds;
     SetSeed( gSeed );
