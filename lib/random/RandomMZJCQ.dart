@@ -1,7 +1,7 @@
 /* @author: Fernando Quinonez
    +----------------------------------------------------------------------+
    |                           Dart Library                               |
-   |                          HEPJAMESRANDOM                              |
+   |                            RandomMZJCQ                               |
    +----------------------------------------------------------------------+
   
    This algorithm implements the original universal random number generator
@@ -16,7 +16,7 @@
    +----------------------------------------------------------------------+
    | Dart                                                                 |
    +----------------------------------------------------------------------+
-   F. Quinonez - Created 2016-10-23
+   F. Quinonez - Created 2016-10-19                  
    +----------------------------------------------------------------------+
    | JavaScript                                                           |
    +----------------------------------------------------------------------+
@@ -47,25 +47,27 @@
    M. Fischler    - State-saving using only ints, for portability 4/12/05
 */
 
+import 'dart:core';
 import 'dart:async';
 import 'dart:math';
 import 'dart:io';
+import 'package:bbt/random/HepRandomEngine.dart';
 
-//class GENERATOR_MZJCQ extends GENERATOR(){
-class hepjamesrandom { 
+
+class RandomMZJCQ extends HepRandomEngine{ 
   List<double> _u = new List();
   double _c, _cd, _cm;
   int _i97, _j97;
 
   int gSeed;
-  int gSeeds;
+  List<int> gSeeds;
 
-  hepjamesrandom( int seed ){
+
+  RandomMZJCQ( { int seed: 19780503, List<int> seeds } ){
     gSeed = seed;
-    //gSeeds = seeds;
+    gSeeds = seeds;
     SetSeed( gSeed );
-    //SetSeeds( theSeed );
-
+    //SetSeeds( theSeeds );
   }
 
   void SetSeed( int seed ){
@@ -91,7 +93,7 @@ class hepjamesrandom {
     int k = ( ( kl / 169 ) % 178 ) + 1;
     int l = kl % 169;
     
-    //super.theSeed = seed;
+    super.theSeed = seed;
 
     for ( n = 1 ; n < 98; n++ ) {
       s = 0.0;
@@ -118,11 +120,9 @@ class hepjamesrandom {
   }
 
 
-  /*
-  void SetSeeds( int Seeds ){
-    
-  };
-  */
+  void SetSeeds( List<int> seeds ){
+    super.theSeeds = seeds;
+  }
 
   double Flat(){
 
@@ -150,10 +150,9 @@ class hepjamesrandom {
 
   }
 
-  double FlatArray( int size, List<double> vect ){
+  void FlatArray( int size, List<double> vect ){
     for ( int i = 0; i < size; ++i ){
       vect.add( Flat() );
-      // vect.add( Flat() );
     }   
   }
 
