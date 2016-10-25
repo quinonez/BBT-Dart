@@ -26,8 +26,4 @@ Known in the High Energy Physics community as the HepJamesRandom generator.
 Probability Distribution Function PDF Uniform.
 
 
-# Librería: random
-## Clases:
-Generador de números pseudo-aleatorios Marzaglia-Zaman-James-Cosmo-Quiñonez.
-Conocido en la comunidad de Física de Altas Energías, como el generador HepJamesRandom.
 

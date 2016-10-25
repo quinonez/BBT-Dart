@@ -3,7 +3,7 @@ authors:
   - Antonio Goez <antoniogoez@gmail.com>
 homepage: https://github.com/quinonez/BBT-Dart
 name: bbt
-version: 1.0.3
+version: 1.0.4
 description: Building Blocks and Tools (BBT) CLI Library. For Scientists, Engineers, Educators and Students.
 dependencies: 
   args: any

@@ -53,7 +53,7 @@ import 'dart:io';
 import 'package:bbt/random/HepRandomEngine.dart';
 
 
-class RandomMZJCQ extends HepRandomEngine{ 
+class HepJamesRandom extends HepRandomEngine{ 
   List<double> _u = new List();
   double _c, _cd, _cm;
   int _i97, _j97;
@@ -61,7 +61,7 @@ class RandomMZJCQ extends HepRandomEngine{
   int gSeed;
   List<int> gSeeds;
 
-  RandomMZJCQ( { int seed: DateTime.millisecondsSinceEpoch(), List<int> seeds } ){
+  HepJamesRandom( { int seed: DateTime.millisecondsSinceEpoch(), List<int> seeds } ){
     gSeed = seed;
     gSeeds = seeds;
     SetSeed( gSeed );
