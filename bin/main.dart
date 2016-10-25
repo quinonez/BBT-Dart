@@ -1,8 +1,8 @@
-import 'package:bbt/random/RandFlat.dart';
+import 'package:bbt/random/randflat.dart';
 
 void main(){
   print('Hello World');
-  var pdf = new RandFlat( xa: 0, xb: 5 );
+  var pdf = new randflat( xa: 0, xb: 5 );
   int n = 50;
   List<double> v = new List();
   pdf.FireArray( n, v );

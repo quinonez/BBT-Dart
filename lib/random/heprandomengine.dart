@@ -2,11 +2,11 @@ import 'dart:async';
 import 'dart:math';
 import 'dart:io';
 
-class HepRandomEngine {
+class heprandomengine {
   int theSeed;
   List<int> theSeeds;
 
-  HepRandomEngine({int seed: 19780503}){
+  heprandomengine({int seed: 19780503}){
 
     void SetSeed( int seed ){}
     void SetSeeds( List<int> seeds ){}

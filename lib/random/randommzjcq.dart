@@ -1,7 +1,7 @@
 /* @author: Fernando Quinonez
    +----------------------------------------------------------------------+
    |                           Dart Library                               |
-   |                          HepJamesRandom                              |
+   |                            randommzjcq                               |
    +----------------------------------------------------------------------+
   
    This algorithm implements the original universal random number generator
@@ -47,13 +47,14 @@
    M. Fischler    - State-saving using only ints, for portability 4/12/05
 */
 
+import 'dart:core';
 import 'dart:async';
 import 'dart:math';
 import 'dart:io';
-import 'package:bbt/random/HepRandomEngine.dart';
+import 'package:bbt/random/heprandomengine.dart';
 
 
-class HepJamesRandom extends HepRandomEngine{ 
+class randommzjcq extends heprandomengine{ 
   List<double> _u = new List();
   double _c, _cd, _cm;
   int _i97, _j97;
@@ -61,7 +62,8 @@ class HepJamesRandom extends HepRandomEngine{
   int gSeed;
   List<int> gSeeds;
 
-  HepJamesRandom( { int seed: 19780503, List<int> seeds } ){
+
+  randommzjcq( { int seed: 19780503, List<int> seeds } ){
     gSeed = seed;
     gSeeds = seeds;
     SetSeed( gSeed );

@@ -1,7 +1,7 @@
 /* @author Fernando Quinonez
    +----------------------------------------------------------------------+
    |                           Dart Library                               |
-   |                              RandFlat                                |
+   |                              randflat                                |
    +----------------------------------------------------------------------+
   
    Library defining methods for shooting flat random numbers, double or
@@ -30,21 +30,21 @@ import 'dart:core';
 import 'dart:async';
 import 'dart:math';
 import 'dart:io';
-import 'package:bbt/random/RandomMZJCQ.dart';
-import 'package:bbt/random/HepRandom.dart';
-import 'package:bbt/random/HepRandomEngine.dart';
+import 'package:bbt/random/randommzjcq.dart';
+import 'package:bbt/random/heprandom.dart';
+import 'package:bbt/random/heprandomengine.dart';
 
 
-class RandFlat extends HepRandom {
+class randflat extends heprandom {
 
   double _xa, _xb, _width, _seed;
-  HepRandomEngine _engine;
+  heprandomengine _engine;
 
-  RandFlat( { double xa: 0, 
+  randflat( { double xa: 0, 
               double xb: 1, 
               double width: null,
               int seed,  
-              HepRandomEngine engine } ) {
+              heprandomengine engine } ) {
     if ( width == null ) width = xb - xa;
     _xa = xa;
     _xb = xb;
@@ -53,7 +53,7 @@ class RandFlat extends HepRandom {
 
     if ( seed == null ) seed = 19780503;
     _seed = seed;
-    if ( engine == null ) _engine = new RandomMZJCQ( seed: _seed );
+    if ( engine == null ) _engine = new randommzjcq( seed: _seed );
   } 
 
   double Fire() {
