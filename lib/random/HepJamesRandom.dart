@@ -61,7 +61,7 @@ class HepJamesRandom extends HepRandomEngine{
   int gSeed;
   List<int> gSeeds;
 
-  HepJamesRandom( { int seed: DateTime.millisecondsSinceEpoch(), List<int> seeds } ){
+  HepJamesRandom( { int seed: 19780503, List<int> seeds } ){
     gSeed = seed;
     gSeeds = seeds;
     SetSeed( gSeed );
@@ -120,7 +120,7 @@ class HepJamesRandom extends HepRandomEngine{
 
   void SetSeeds( List<int> seeds ){
     super.theSeeds = seeds;
-  };
+  }
 
   double Flat(){
 
