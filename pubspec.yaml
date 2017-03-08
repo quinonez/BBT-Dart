@@ -6,7 +6,7 @@ name: bbt
 version: 1.0.7
 description: Building Blocks and Tools (BBT) CLI Library. For Scientists, Engineers, Educators and Students.
 dependencies: 
-  args: any
-  dart_style: any
-  test: any
+  args: ">=0.13.7 <0.14.0"
+  dart_style: ">=0.2.16 <0.3.0"
+  test: ">=0.12.20+2 <0.13.0"
 
