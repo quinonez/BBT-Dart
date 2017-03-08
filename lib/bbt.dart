@@ -1,4 +1,4 @@
-library bbt
+library bbt;
 
 export 'random/heprandomengine.dart';
 export 'random/heprandom.dart';
